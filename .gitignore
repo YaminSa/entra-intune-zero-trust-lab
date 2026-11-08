@@ -1,0 +1,6 @@
+# Keep lab credentials out of the repo
+*.txt
+*password*
+*credential*
+*secret*
+.env

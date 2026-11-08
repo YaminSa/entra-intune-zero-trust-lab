@@ -1,0 +1,61 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "id": "39f0b40c-b443-43c3-a44f-cd7103451743",
+  "templateId": null,
+  "displayName": "CA001-Require-MFA-Licensed-Users",
+  "createdDateTime": "2026-11-08T05:50:57.3329788Z",
+  "modifiedDateTime": "2026-11-08T06:00:23.2216779Z",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "actionsAndDestinations": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAgentActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [
+        "073dcf29-63c2-4b58-bd98-ac96f64ff5fb"
+      ],
+      "includeGroups": [
+        "7092478c-8fdc-4db6-bc5f-b92d1ee018fe"
+      ],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('39f0b40c-b443-43c3-a44f-cd7103451743')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}
